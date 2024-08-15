@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* src/styles.css */
+
+/* Container for category */
+.category {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Container for widgets and button */
+.widget-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow widgets to wrap to the next line */
+  gap: 10px; /* Space between widgets and button */
+}
+
+/* Styling for individual widgets */
+.widget {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  border-radius: 5px;
+  flex: 1 1 auto; /* Allow widgets to grow and shrink */
+  max-width: calc(23% - 20px); /* Adjust to fit as many widgets as you want per row */
+}
+
+/* Styling for the Add Widget button */
+.add-widget-button {
+  align-self: flex-start; /* Align the button to the start of the container */
+  margin: 10px;
+  padding: 10px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.add-widget-button:hover {
+  background-color: #006666;
+}
+
+/* Ensure the button sticks to the right */
+.widget-container::after {
+  content: '';
+  flex: 1 1 100%; /* Take up full width */
+}
+
+button {
+  margin: 10px 5px;
+  padding: 5px 10px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #006666;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+/* Flexbox for Category and Widgets Layout */
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widget-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* src/styles.css */
+.temp{
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+
+.edit{
+  margin: 2px 5px 0 0;
+  padding: 18px;
+}
+input[type="text"], select {
+  margin: 10px 10px 0 10px;
+  padding: 12px; /* Increased padding for height */
+  width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px; /* Increased font size */
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #008080;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 128, 128, 0.2);
+}
+
+label {
+  margin: 10px;
+  display: block;
+}
+
+
+
